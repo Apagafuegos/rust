@@ -11,6 +11,8 @@ fn main() {
     let div: i32= x / y;
     let reminder: i32 = x % y;
 
+    funcion_hola();
+
     println!("{sum},{diff},{prod},{div},{reminder}");
 
     let t: bool = true;
@@ -31,16 +33,50 @@ fn main() {
     println!("{victorias_alonso}");
     println!("{yo_con_tu_madre}");
 
-    let a: [i32; 5] = [1, 2, 3, 4, 5];
+    let a: [i32; 12] = [1, 2, 3, 4, 5, 6, 7, 8 , 9 , 10 , 11, 12];
     let months: [&str; 12] = ["January", "February", "March", "April", "May", "June", "July",
               "August", "September", "October", "November", "December"];
 
     for n in 0.. months.len(){
-        println!("{}", months[n]);
+        print!("{} ", months[n]);
+    }
+    println!();
+
+    for element in months{
+        print!("{} ", element);
     }
 
-    
+    for n in 0.. a.len(){
+        print!("{} ",a[n]);
+    }
 
+    let num_x = funcion_con_return(33);
+    println!("{}",num_x);
 
+    let condicion = false;
+    let number2 = if condicion{33} else {0};
+
+    println!("{}",number2);
+
+    loop_hasta_33();
+}
+
+fn funcion_hola(){
+    println!("Hola bebe :)")
+}
+
+fn funcion_con_return(x:i32) -> i32{
+    let x = -x;
+    return x;
+}
+
+fn loop_hasta_33(){
+
+    let mut contador = 0;
+
+    while contador < 33 {
+        println!("{}",contador);
+        contador += 1;
+    }
 
 }
