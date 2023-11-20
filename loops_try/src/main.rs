@@ -1,6 +1,6 @@
 fn main() {
     // A counter variable
-    let n = 99;
+    let n = 33;
 
     match n {
         1 => println!("Viva el Betis"),
