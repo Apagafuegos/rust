@@ -44,7 +44,7 @@ fn main() {
     }
     println!();
 
-    let mut scores = HashMap::new();
+    let mut scores = HashMap::new(); //Diccionario con clave : valor en python
 
     scores.insert(String::from("Alonso"), 14);
     scores.insert(String::from("Sainz"), 55);

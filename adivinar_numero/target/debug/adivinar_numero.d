@@ -1,1 +1,1 @@
-C:\Rust\rust\adivinar_numero\target\debug\adivinar_numero.exe: C:\Rust\rust\adivinar_numero\src\main.rs
+C:\Rust\rust\adivinar_numero\target\debug\adivinar_numero.exe: C:\Rust\rust\adivinar_numero\src\lib.rs C:\Rust\rust\adivinar_numero\src\main.rs
