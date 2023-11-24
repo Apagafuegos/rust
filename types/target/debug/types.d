@@ -1,1 +1,1 @@
-C:\Users\TECH\Downloads\rust\types\target\debug\types.exe: C:\Users\TECH\Downloads\rust\types\src\main.rs
+D:\rust\types\target\debug\types.exe: D:\rust\types\src\main.rs
