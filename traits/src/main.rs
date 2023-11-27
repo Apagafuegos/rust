@@ -28,6 +28,14 @@ impl Summary for Tweet{
     }
 }
 
+fn longest<'a>(x: &'a str, y: &'a str) -> &'a str{ // no se puede devolver una referencia sin saber su tiempo de vida
+    if x.len() > y.len() {
+        x
+    }else{
+        y   
+    }
+}
+
 fn main() {
 
     let tuit = Tweet{
@@ -38,4 +46,19 @@ fn main() {
     };
 
     println!("Tweet nuevo de {}",tuit.summarise());
+
+    let respuesta = longest("FERNANDO ALONSO DIAZ", "hola jeje");
+    println!("{respuesta}")
+
+    /*let r;
+    {
+        let x = 5;
+        r = &x; incorrecto ya que x muere antes de que r sea pedido,
+                por lo que &x no existe
+
+    }
+    println!("{r}");*/
+
+
+
 }
