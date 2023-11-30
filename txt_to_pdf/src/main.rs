@@ -9,7 +9,7 @@ fn main() {
         process::exit(1);
     });
 
-    if let Err(e) = txt_to_pdf::generar_pdf(config) {
+    if let Err(e) = txt_to_pdf::generate_pdf(config) {
         println!("App error {e}");
         process::exit(1);
     }
