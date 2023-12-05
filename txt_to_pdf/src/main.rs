@@ -11,6 +11,6 @@ fn main() {
 
     if let Err(e) = txt_to_pdf::generate_pdf(config) {
         println!("App error {e}");
-        process::exit(1);
+        process::exit(1)
     }
 }
